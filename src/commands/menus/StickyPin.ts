@@ -117,7 +117,7 @@ export default class StickMessageCommand extends BaseCommand {
 		if (!res) {
 			interaction.followUp({
 				content: "Failed to create sticky pinned message.",
-				flags: 64,
+				ephemeral: true,
 			});
 			return;
 		}

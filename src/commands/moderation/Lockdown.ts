@@ -83,7 +83,7 @@ export default class LockdownCommand extends BaseCommand {
 		]);
 
 		await interaction.deferReply({
-			flags: 64,
+			ephemeral: true,
 		});
 
 		const time = Math.floor(Date.now() / 1000);
